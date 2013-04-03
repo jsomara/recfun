@@ -40,12 +40,12 @@ object Main {
    * Exercise 3
    */
   def countChange(money: Int, coins: List[Int]): Int = {
-    def f(money: Int, coins: List[Int], sum: Int): Int = {
-      if(coins.isEmpty || money <= 0) 0
-      else if(coins(0) == money) 1
-      else if(coins(0) > money) sum + f(money, coins.tail, sum)
-      else sum + f(money - coins.head, coins, sum)
+    def f(money: Int, coins: List[Int]): Int = {
+      if(coins.isEmpty || money < 0) 0
+      else if(money == 0) 1
+      else f(money, coins.tail) + f(money - coins.head,coins)
     }
-    
-    f(money, coins, 0)
+    if(money == 0 || coins.isEmpty) 0
+    else f(money, coins)
   }    
+}
