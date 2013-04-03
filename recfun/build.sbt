@@ -12,7 +12,7 @@ libraryDependencies += "junit" % "junit" % "4.10" % "test"
 
 // This setting defines the project to which a solution is submitted. When creating a
 // handout, the 'createHandout' task will make sure that its value is correct.
-submitProjectName := "recfun"
+submitProjectName := "rectum"
 
 // See documentation in ProgFunBuild.scala
 projectDetailsMap := {
@@ -24,8 +24,8 @@ Map(
                   maxScore = 10d,
                   styleScoreRatio = 0.2,
                   courseId=currentCourseId),
-  "recfun" ->     ProjectDetails(
-                  packageName = "recfun",
+  "rectum" ->     ProjectDetails(
+                  packageName = "rectum",
                   assignmentPartId = "3Rarn9Ki",
                   maxScore = 10d,
                   styleScoreRatio = 0.2,

@@ -1,4 +1,4 @@
-package recfun
+package rectum
 
 import org.scalatest.FunSuite
 
