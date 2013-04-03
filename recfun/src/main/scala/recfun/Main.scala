@@ -1,4 +1,4 @@
-package recfun
+package rectum
 import common._
 
 object Main {
